@@ -54,6 +54,7 @@ class _ItemBarCompress extends StatelessWidget {
                   TextButton(child: Text('Inicio',), onPressed: (){}),
                   TextButton(child: Text('Inicio'), onPressed: (){}),
                   TextButton(child: Text('Inicio'), onPressed: (){}),
+                  
                 ],
               ),
             );
