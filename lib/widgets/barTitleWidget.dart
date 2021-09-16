@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portafolio_web_f/providers/drawelProvider.dart';
 import 'package:portafolio_web_f/utils/responsivo.dart';
+import 'package:portafolio_web_f/utils/utils.dart';
+import 'package:provider/provider.dart';
 
 class BarTitleWidget extends StatelessWidget {
   
@@ -28,6 +31,9 @@ class BarTitleWidget extends StatelessWidget {
 class _ItemBarCompress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    final key = Provider.of<DrawelProviders>(context);
+
     return Container(
       //color: Colors.red,
       child: Row(
@@ -35,9 +41,9 @@ class _ItemBarCompress extends StatelessWidget {
         children: [
           Spacer(),
           IconButton(
-            color: Colors.white,
+            color: colorSecundario,
             icon: Icon(Icons.view_list_outlined, size: 35,),
-            onPressed: _listaItems
+            onPressed: () => key.scaffoldkey.currentState?.openEndDrawer()
           ),
           SizedBox(width: 30,)
         ],
@@ -45,20 +51,6 @@ class _ItemBarCompress extends StatelessWidget {
     );
   }
 
-  Widget _listaItems() {
-    return Flexible(
-              fit: FlexFit.tight,
-              child: ListView(
-                scrollDirection: Axis.vertical,
-                children: [
-                  TextButton(child: Text('Inicio',), onPressed: (){}),
-                  TextButton(child: Text('Inicio'), onPressed: (){}),
-                  TextButton(child: Text('Inicio'), onPressed: (){}),
-                  
-                ],
-              ),
-            );
-  }
 }
 
 class _ItemsBar extends StatelessWidget {
