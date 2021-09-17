@@ -11,16 +11,6 @@ class DrawelProviders extends ChangeNotifier {
     notifyListeners();
   }
 
-  late Widget _widget;
-
-  Widget get widget => this._widget;
-
-  set widget(Widget widget) {
-    this._widget = widget;
-    notifyListeners();
-  }
-
-
 }
 
 
