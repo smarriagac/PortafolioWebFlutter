@@ -25,7 +25,7 @@ class Page1Movil extends StatelessWidget {
           SizedBox(height: 5.0,),
           Text('Sebastian Marriaga',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 35.0),),
           SizedBox(height: 5.0,), 
-          Text('Soy Desarrollador Flutter Jr',style: TextStyle(color: Colors.white54,fontWeight: FontWeight.bold,fontSize: 24.0),),
+          Text('Soy Desarrollador Movil Jr',style: TextStyle(color: Colors.white54,fontWeight: FontWeight.bold,fontSize: 24.0),),
           SizedBox(height: 40.0,),
           Spacer(),
           Text(str, style: TextStyle(fontSize: 20.0,color:Colors.white60)),

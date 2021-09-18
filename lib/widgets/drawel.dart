@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:provider/provider.dart';
+
 import 'package:portafolio_web_f/providers/scrollProvider.dart';
 import 'package:portafolio_web_f/utils/utils.dart';
-import 'package:provider/provider.dart';
 
 class DrawelMovil extends StatelessWidget {
   const DrawelMovil({ Key? key }) : super(key: key);
@@ -26,7 +28,7 @@ class DrawelMovil extends StatelessWidget {
             }),
             Divider(height: 10),
             TextButton(child: Text('Acerca de mi'), onPressed: (){
-              _movetopixel(_controller,controllerScroll, 500);
+              _movetopixel(_controller,controllerScroll, 850);
               Navigator.pop(context);
             }),
             Divider(height: 10),
