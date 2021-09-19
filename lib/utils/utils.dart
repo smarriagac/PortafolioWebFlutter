@@ -16,11 +16,10 @@ final styleSkills = TextStyle(fontSize: 15, color: Colors.white54);
 
 List<SkillsModel> skillsList = [
 
-  SkillsModel(widget: Text('Flutter', style: styleSkills), imagen: AssetImage('assets/images/flutter.jpg')),
-  SkillsModel(widget: Text('Arduino', style: styleSkills), imagen: AssetImage('assets/images/arduino.png')),
-  SkillsModel(widget: Text('Python', style: styleSkills),   imagen:  AssetImage('assets/images/python.png')),
-  SkillsModel(widget: Text('Git', style: styleSkills),   imagen:  AssetImage('assets/images/git.png')),
-
+  SkillsModel(widget: Text('Flutter', style: styleSkills), imagen: AssetImage('assets/images/flutter.jpg'), porcentaje: 60),
+  SkillsModel(widget: Text('Arduino', style: styleSkills), imagen: AssetImage('assets/images/arduino.png'), porcentaje: 73),
+  SkillsModel(widget: Text('Python', style: styleSkills),   imagen:  AssetImage('assets/images/python.png'), porcentaje: 65),
+  SkillsModel(widget: Text('Git', style: styleSkills),   imagen:  AssetImage('assets/images/git.png'), porcentaje: 82),
 
 ];
 

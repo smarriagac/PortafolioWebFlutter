@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 
+import 'package:portafolio_web_f/screens/uiMovil/page2.dart';
+import 'package:portafolio_web_f/screens/uiMovil/page3.dart';
 import 'package:portafolio_web_f/providers/scrollProvider.dart';
-import 'package:portafolio_web_f/screens/uiMovil/Page1.dart';
+import 'package:portafolio_web_f/screens/uiMovil/page1.dart';
 import 'package:portafolio_web_f/widgets/barTitleWidget.dart';
 
-import 'Page2.dart';
 
 
 class UiMovilScreen extends StatelessWidget {
@@ -28,8 +29,10 @@ class UiMovilScreen extends StatelessWidget {
           children: [
             BarTitleWidget(),
             //SizedBox(height: 900),
-            Page1Movil(),
+            Page3Movil(),
             Page2Movil(),
+            Page1Movil(),
+
             //Text('movil')
           ],//color: Colors.red,
         ),
