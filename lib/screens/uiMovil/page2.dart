@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:portafolio_web_f/utils/utils.dart';
-import 'package:portafolio_web_f/widgets/RadialProgresWidget.dart';
+import 'package:portafolio_web_f/widgets/radialProgresWidget.dart';
 
 class Page2Movil  extends StatelessWidget {
   const Page2Movil ({ Key? key }) : super(key: key);
@@ -93,7 +93,7 @@ class _Skills extends StatelessWidget {
               child: RadialProgress(
               porcentaje: this.porcentaje, 
               colorPrimario: colorSecundario1, 
-              grosorSecundario: 3,
+              grosorSecundario: 4,
               grosorPrimario: 8
               )
             )

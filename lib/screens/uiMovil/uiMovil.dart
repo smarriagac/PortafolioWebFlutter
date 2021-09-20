@@ -29,9 +29,9 @@ class UiMovilScreen extends StatelessWidget {
           children: [
             BarTitleWidget(),
             //SizedBox(height: 900),
-            Page3Movil(),
-            Page2Movil(),
             Page1Movil(),
+            Page2Movil(),
+            Page3Movil(),
 
             //Text('movil')
           ],//color: Colors.red,

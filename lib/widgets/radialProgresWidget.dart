@@ -1,8 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-
-class RadialProgress extends StatefulWidget {
+class RadialProgress extends StatelessWidget {
 
   final porcentaje;
   final Color colorPrimario;
@@ -18,58 +17,24 @@ class RadialProgress extends StatefulWidget {
     this.grosorPrimario = 10.0
   });
 
-  @override
-  _RadialProgressState createState() => _RadialProgressState();
-}
-
-class _RadialProgressState extends State<RadialProgress> with SingleTickerProviderStateMixin {
-
-  AnimationController? controller;
-  double porcentajeAnterior = 0.0;
-
-  @override
-  void initState() { 
-
-    porcentajeAnterior = widget.porcentaje;
-    controller = new AnimationController(vsync: this, duration: Duration(milliseconds: 200));
-    
-    super.initState();
-    
-  }
   
-  @override
-  void dispose() {
-    controller?.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
-
-    controller?.forward(from: 0.0);
-
-    final diferenciaAnimar = widget.porcentaje - porcentajeAnterior;
-    porcentajeAnterior = widget.porcentaje;
-
-    return AnimatedBuilder(
-      animation: controller!,
-      builder: (BuildContext context, Widget? child) {
-        return Container(
+    return Container(
       padding: EdgeInsets.all(10),
       width: double.infinity,
       height: double.infinity,
       child: CustomPaint(
         painter: _MiRadialProgress(
-          (widget.porcentaje - diferenciaAnimar) + (diferenciaAnimar * controller!.value),
-          widget.colorPrimario,
-          widget.colorSecundario,
-          widget.grosorSecundario,
-          widget.grosorPrimario
+          this.porcentaje,
+          this.colorPrimario,
+          this.colorSecundario,
+          this.grosorSecundario,
+          this.grosorPrimario
           ),
         ),
-        );
-      },
-    ); 
+    );
   }
 }
 
@@ -92,20 +57,6 @@ class _MiRadialProgress extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-
-    /* final Rect rect = new Rect.fromCircle(
-      center: Offset(0,0), 
-      radius: 180
-    ); */
-
-    /* final Gradient gradiente = new LinearGradient(
-      colors: [
-        Color(0xffC012FF),
-        Color(0xff6D05E8),
-        Colors.red
-      ]
-    ); */
-
 
     // circulo completado
     final paint = new Paint()

@@ -14,12 +14,17 @@ final colorSecundario3 = Color(0xFFEEEEEE);
 final styletitle = TextStyle(fontSize: 35, color: colorSecundario, fontWeight: FontWeight.bold);
 final styleSkills = TextStyle(fontSize: 15, color: Colors.white54);
 
+//  nombre Repo
+final styletitleRepo = TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold);
+
 List<SkillsModel> skillsList = [
 
-  SkillsModel(widget: Text('Flutter', style: styleSkills), imagen: AssetImage('assets/images/flutter.jpg'), porcentaje: 60),
-  SkillsModel(widget: Text('Arduino', style: styleSkills), imagen: AssetImage('assets/images/arduino.png'), porcentaje: 73),
-  SkillsModel(widget: Text('Python', style: styleSkills),   imagen:  AssetImage('assets/images/python.png'), porcentaje: 65),
-  SkillsModel(widget: Text('Git', style: styleSkills),   imagen:  AssetImage('assets/images/git.png'), porcentaje: 82),
+  SkillsModel(widget: Text('Flutter 71 %', style: styleSkills), imagen: AssetImage('assets/images/flutter.jpg'), porcentaje: 68),
+  SkillsModel(widget: Text('Python 65 %', style: styleSkills),   imagen:  AssetImage('assets/images/python.png'), porcentaje: 65),
+  SkillsModel(widget: Text('HTML 68 %', style: styleSkills),   imagen:  AssetImage('assets/images/html.png'), porcentaje: 68),
+  SkillsModel(widget: Text('CSS 69 %', style: styleSkills),   imagen:  AssetImage('assets/images/css.png'), porcentaje: 69),
+  SkillsModel(widget: Text('Arduino 73 %', style: styleSkills), imagen: AssetImage('assets/images/arduino.png'), porcentaje: 73),
+  SkillsModel(widget: Text('Git 82 %', style: styleSkills),   imagen:  AssetImage('assets/images/git.png'), porcentaje: 82),
 
 ];
 
