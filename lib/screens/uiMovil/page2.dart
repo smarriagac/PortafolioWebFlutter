@@ -16,12 +16,12 @@ class Page2Movil  extends StatelessWidget {
       constraints: BoxConstraints(
         maxWidth: 500
       ),
-      height: 900,
+      height: 1000,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('Sobre Mi', style: styletitle),
+          Text('Sobre mi', style: styletitle),
           SizedBox(height: 30),
           _ImagenPerfil(),
           SizedBox(height: 30),
@@ -130,7 +130,6 @@ class _ImagenPerfil extends StatelessWidget {
             shape: BoxShape.circle,
             image: DecorationImage(image: AssetImage('assets/images/perfil.png'), fit: BoxFit.cover)
           ),
-          
         ),
       ],
     );

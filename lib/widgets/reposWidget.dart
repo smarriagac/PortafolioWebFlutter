@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 import 'package:portafolio_web_f/utils/utils.dart';
 
 class RepoWidget extends StatelessWidget {
@@ -61,16 +60,26 @@ class RepoWidget extends StatelessWidget {
         SizedBox(height: 15),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             
             Text(this.descricionSecundaria, style: TextStyle(color: Colors.white70, fontSize: 16)),
             SizedBox(width: 10),
-            IconButton(
-              onPressed: (){
-                print(this.linkRepo);
-              }, 
-              icon: Center(child: FaIcon(FontAwesomeIcons.github, size: 45, color: Colors.teal,))
+            Container(
+              width: 70,
+              height: 70,
+              decoration: BoxDecoration(
+                color: Colors.white70,
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(offset: Offset(5,2), color: colorSecundario1)
+                ]
+              ),
+              child: IconButton(
+                onPressed: (){
+                  print(this.linkRepo);
+                }, 
+                icon: Center(child: FaIcon(FontAwesomeIcons.github, size: 45, color: Colors.teal,))
+              ),
             ),
           ],
         )

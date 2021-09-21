@@ -21,24 +21,24 @@ class DrawelMovil extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           children: [
-            SizedBox(height: 50),
-            TextButton(child: Text('Inicio'), onPressed: () {
+            SizedBox(height: 80),
+            TextButton(child: Text('Inicio', style: styleDrawel,), onPressed: () {
               _movetopixel(_controller,controllerScroll, 0);
               Navigator.pop(context);
             }),
             Divider(height: 10),
-            TextButton(child: Text('Acerca de mi'), onPressed: (){
-              _movetopixel(_controller,controllerScroll, 850);
+            TextButton(child: Text('Sobre mi', style: styleDrawel,), onPressed: (){
+              _movetopixel(_controller,controllerScroll, 710);
               Navigator.pop(context);
             }),
             Divider(height: 10),
-            TextButton(child: Text('Portafolio'), onPressed: (){
-              _movetopixel(_controller,controllerScroll, 500 * 2);
+            TextButton(child: Text('Portafolio', style: styleDrawel,), onPressed: (){
+              _movetopixel(_controller,controllerScroll, 1710);
               Navigator.pop(context);
             }),
             Divider(height: 10),
-            TextButton(child: Text('Contacto'), onPressed: (){
-              _movetopixel(_controller,controllerScroll, 500 * 3);
+            TextButton(child: Text('Contacto', style: styleDrawel), onPressed: (){
+              _movetopixel(_controller,controllerScroll, 3610);
               Navigator.pop(context);
             }),
           ],

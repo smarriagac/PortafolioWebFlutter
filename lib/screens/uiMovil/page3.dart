@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import 'package:portafolio_web_f/utils/utils.dart';
-import 'package:portafolio_web_f/widgets/reposWidget.dart';
 
 class Page3Movil extends StatelessWidget {
 
@@ -13,37 +13,17 @@ class Page3Movil extends StatelessWidget {
       height: 1900,
       child: Column(
         children: [
-          Text('Repositorios', style: styletitle),
-          SizedBox(height: 40),
-          Column(
+          Text('Portafolio', style: styletitle),
+          SizedBox(height: 50),
+          /* Column(
             children: repos.map((e) => e).toList(),
-          )
+          ) */
+          for (var i = 0; i < repos.length; i++) 
+            repos[i]
+          
         ],
       ),
     );
   }
-
-  final List<Widget> repos = [
-    RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
-      nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
-    ),
-    SizedBox(height: 50),
-    RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
-      nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
-    ),
-    SizedBox(height: 50),
-    RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
-      nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
-    ),
-  ];
 }
 

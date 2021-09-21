@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portafolio_web_f/screens/uiMovil/page4.dart';
 import 'package:provider/provider.dart';
 
 
@@ -32,6 +33,7 @@ class UiMovilScreen extends StatelessWidget {
             Page1Movil(),
             Page2Movil(),
             Page3Movil(),
+            Page4Movil(),
 
             //Text('movil')
           ],//color: Colors.red,
