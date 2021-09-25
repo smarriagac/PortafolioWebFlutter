@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portafolio_web_f/providers/drawelProvider.dart';
+import 'package:portafolio_web_f/screens/uiWeb/uiWeb.dart';
 
 import 'package:portafolio_web_f/utils/utils.dart';
 import 'package:portafolio_web_f/screens/uiMovil/uiMovil.dart';
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: backgraundColor,
       body: LayoutHome(
         appMovil: UiMovilScreen(),
-        appWeb: Text('Hola Web'),
+        appWeb: UiWebScreen(),
       ),
       endDrawer: DrawelMovil(),
       key: key.scaffoldkey,

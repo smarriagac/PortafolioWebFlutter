@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portafolio_web_f/providers/drawelProvider.dart';
 import 'package:portafolio_web_f/providers/scrollProvider.dart';
+import 'package:portafolio_web_f/providers/scrollProviderWeb.dart';
 import 'package:portafolio_web_f/screens/homeScreen.dart';
 import 'package:provider/provider.dart';
 
@@ -13,6 +14,7 @@ class GestorState extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => DrawelProviders()),
         ChangeNotifierProvider(create: (_) => ScrollProviderController()),
+        ChangeNotifierProvider(create: (_) => ScrollProviderControllerWeb()),
       ],
       child: MyApp(),
     );

@@ -25,6 +25,12 @@ final stylecontacto = TextStyle(fontSize: 20, color: colorSecundario, fontStyle:
 final styletitle = TextStyle(fontSize: 35, color: colorSecundario, fontWeight: FontWeight.bold);
 final styleSkills = TextStyle(fontSize: 15, color: Colors.white54);
 
+
+// web
+final styletitleweb = TextStyle(fontSize: 55, color: colorSecundario, fontWeight: FontWeight.bold);
+
+
+
 //  nombre Repo
 final styletitleRepo = TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold);
 
@@ -51,14 +57,14 @@ final List<Widget> repos = [
     ),
     SizedBox(height: 50),
     RepoWidget(
-      descripcion: 'Genera una lista de las peliculas en carteleras y las mas populares',
+      descripcion: 'Genera una lista de las peliculas en carteleras y las mas populares.',
       nombreRepo: ' Movie App',
       linkRepo: 'https://github.com/smarriagac/Aplicacion_Peliculas',
       rutaImage: 'https://i.postimg.cc/9MH93pvv/Group-1.png',
     ),
     SizedBox(height: 50),
     RepoWidget(
-      descripcion: 'Gestion de inventarion de una empresa de pan por medio de Qr',
+      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos r.',
       nombreRepo: ' QR app',
       linkRepo: 'https://github.com/smarriagac/inventory_app',
       rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',

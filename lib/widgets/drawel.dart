@@ -42,6 +42,7 @@ class DrawelMovil extends StatelessWidget {
               Navigator.pop(context);
             }),
           ],
+          
         ),
       )
     );
