@@ -10,7 +10,7 @@ class Page3Movil extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       width: 500,
-      height: 1900,
+      height: 2000,
       child: Column(
         children: [
           Text('Portafolio', style: styletitle),

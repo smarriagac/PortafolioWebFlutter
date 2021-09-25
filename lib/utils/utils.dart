@@ -44,24 +44,24 @@ List<SkillsModel> skillsList = [
 // Lista de Repositorios
 final List<Widget> repos = [
     RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
-      nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
+      descripcion: 'Contiene las noticias de los principales medios de comunicación de colombia.',
+      nombreRepo: ' Noticias App',
+      linkRepo: 'https://github.com/smarriagac/Aplicacion_Noticias',
+      rutaImage: 'https://i.postimg.cc/rmGrq4Tz/Noticias.png',
     ),
     SizedBox(height: 50),
     RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
-      nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
+      descripcion: 'Genera una lista de las peliculas en carteleras y las mas populares',
+      nombreRepo: ' Movie App',
+      linkRepo: 'https://github.com/smarriagac/Aplicacion_Peliculas',
+      rutaImage: 'https://i.postimg.cc/9MH93pvv/Group-1.png',
     ),
     SizedBox(height: 50),
     RepoWidget(
-      descripcion: 'Proyecto que tiene como funcion tal y ta;',
+      descripcion: 'Gestion de inventarion de una empresa de pan por medio de Qr',
       nombreRepo: ' QR app',
-      linkRepo: 'ithubtal',
-      rutaImage: 'assets/images/flutter.jpg',
+      linkRepo: 'https://github.com/smarriagac/inventory_app',
+      rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',
     ),
   ];
 

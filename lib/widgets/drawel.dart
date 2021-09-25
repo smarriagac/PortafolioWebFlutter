@@ -38,7 +38,7 @@ class DrawelMovil extends StatelessWidget {
             }),
             Divider(height: 10),
             TextButton(child: Text('Contacto', style: styleDrawel), onPressed: (){
-              _movetopixel(_controller,controllerScroll, 3610);
+              _movetopixel(_controller,controllerScroll, 3710);
               Navigator.pop(context);
             }),
           ],

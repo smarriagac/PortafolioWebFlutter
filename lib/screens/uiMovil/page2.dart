@@ -114,8 +114,8 @@ class _ImagenPerfil extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(
-          height: 250,
-          width: 250,
+          height: 300,
+          width: 300,
           decoration: BoxDecoration(
             color: colorSecundario,
             shape: BoxShape.circle
@@ -123,8 +123,8 @@ class _ImagenPerfil extends StatelessWidget {
         ),
 
         Container(
-          height: 240,
-          width: 240,
+          height: 290,
+          width: 290,
           decoration: BoxDecoration(
             color: Colors.green,
             shape: BoxShape.circle,

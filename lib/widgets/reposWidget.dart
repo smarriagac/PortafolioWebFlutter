@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:portafolio_web_f/utils/utils.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RepoWidget extends StatelessWidget {
   
@@ -31,13 +32,17 @@ class RepoWidget extends StatelessWidget {
           height: 250,
           width: 300,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            image: DecorationImage (image:AssetImage(this.rutaImage), fit: BoxFit.cover)
+            borderRadius: BorderRadius.circular(20),            
+          ),
+          child: FadeInImage(
+            image: NetworkImage(this.rutaImage),
+            placeholder: AssetImage('assets/images/sinimagen.gif'),
+            fit: BoxFit.cover,
           ),          
         ),
         SizedBox(height: 30),
         Container(
-          height: 100,
+          height: 150,
           width: 350,
           decoration: BoxDecoration(
             color: Color(0xff172943),
@@ -75,8 +80,8 @@ class RepoWidget extends StatelessWidget {
                 ]
               ),
               child: IconButton(
-                onPressed: (){
-                  print(this.linkRepo);
+                onPressed: () async {
+                  await launch(this.linkRepo);
                 }, 
                 icon: Center(child: FaIcon(FontAwesomeIcons.github, size: 45, color: Colors.teal,))
               ),
