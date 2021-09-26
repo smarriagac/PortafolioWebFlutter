@@ -83,9 +83,10 @@ class _ItemsBar extends StatelessWidget {
           ),
           _widthTilte(85, context),
           TextButton(child: Text('Acerca de mi', style: textStyle), onPressed: ()=> 
-          _movetopixel(scrollLisviwe.controlerweb, scrollLisviwe, 1000)),
+          _movetopixel(scrollLisviwe.controlerweb, scrollLisviwe, 1050)),
           _widthTilte(85, context),
-          TextButton(child: Text('Portafolio', style: textStyle), onPressed: (){}),
+          TextButton(child: Text('Portafolio', style: textStyle), onPressed: ()=>
+          _movetopixel(scrollLisviwe.controlerweb, scrollLisviwe, 1850)),
           _widthTilte(85, context),
           TextButton(child: Text('Contacto', style: textStyle), onPressed: (){}),
           _widthTilte(85, context),

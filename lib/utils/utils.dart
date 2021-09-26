@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portafolio_web_f/widgets/reposWebWidget.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:portafolio_web_f/models/skillsModels.dart';
 import 'package:portafolio_web_f/widgets/reposWidget.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 final backgraundColor = Color(0xff0A192F);
 final colorSecundario = Color(0xff48E1EC);
@@ -25,15 +28,8 @@ final stylecontacto = TextStyle(fontSize: 20, color: colorSecundario, fontStyle:
 final styletitle = TextStyle(fontSize: 35, color: colorSecundario, fontWeight: FontWeight.bold);
 final styleSkills = TextStyle(fontSize: 15, color: Colors.white54);
 
-
-// web
-final styletitleweb = TextStyle(fontSize: 55, color: colorSecundario, fontWeight: FontWeight.bold);
-
-
-
 //  nombre Repo
 final styletitleRepo = TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold);
-
 
 // Lista de Habilidades
 List<SkillsModel> skillsList = [
@@ -65,7 +61,7 @@ final List<Widget> repos = [
     SizedBox(height: 50),
     RepoWidget(
       descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos r.',
-      nombreRepo: ' QR app',
+      nombreRepo: ' Inventario app',
       linkRepo: 'https://github.com/smarriagac/inventory_app',
       rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',
     ),
@@ -90,6 +86,41 @@ final List<Widget> repos = [
     
 
   ];
+
+
+  // ========================================== web ============================================= //
+
+final styletitleweb = TextStyle(fontSize: 55, color: colorSecundario, fontWeight: FontWeight.bold);
+final styletitleRepoWeb = TextStyle(fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold);
+
+
+
+final List<Widget> reposWeb = [
+    RepoWebWidget(
+      descripcion: 'Contiene las noticias de los principales medios de comunicación de colombia.',
+      nombreRepo: ' Noticias App',
+      linkRepo: 'https://github.com/smarriagac/Aplicacion_Noticias',
+      rutaImage: 'https://i.postimg.cc/rmGrq4Tz/Noticias.png',
+      direccion: true,
+    ),
+    SizedBox(height: 150),
+    RepoWebWidget(
+      descripcion: 'Genera una lista de las peliculas en carteleras y las mas populares.',
+      nombreRepo: ' Movie App',
+      linkRepo: 'https://github.com/smarriagac/Aplicacion_Peliculas',
+      rutaImage: 'https://i.postimg.cc/9MH93pvv/Group-1.png',
+      direccion: false,
+    ),
+    SizedBox(height: 150),
+    RepoWebWidget(
+      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos r.',
+      nombreRepo: ' Inventario app',
+      linkRepo: 'https://github.com/smarriagac/inventory_app',
+      rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',
+      direccion: true,
+    ),
+  ];
+
 
 /* Container(
               width: 200,

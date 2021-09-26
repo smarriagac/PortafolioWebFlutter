@@ -13,7 +13,7 @@ class Page2Web  extends StatelessWidget {
 
 
     return Container(
-      padding: EdgeInsets.fromLTRB(30, 25, 30, 20),
+      padding: EdgeInsets.fromLTRB(50, 25, 30, 20),
       //color: Colors.green,
       constraints: BoxConstraints(
         maxWidth: double.infinity
