@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio_web_f/providers/drawelProvider.dart';
-import 'package:portafolio_web_f/screens/uiWeb/uiWeb.dart';
+
+import 'package:provider/provider.dart';
 
 import 'package:portafolio_web_f/utils/utils.dart';
+import 'package:portafolio_web_f/screens/uiWeb/uiWeb.dart';
 import 'package:portafolio_web_f/screens/uiMovil/uiMovil.dart';
 import 'package:portafolio_web_f/widgets/drawel.dart';
-import 'package:provider/provider.dart';
+import 'package:portafolio_web_f/providers/drawelProvider.dart';
 
 
 class HomeScreen extends StatelessWidget {

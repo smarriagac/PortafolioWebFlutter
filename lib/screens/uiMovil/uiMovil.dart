@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio_web_f/screens/uiMovil/page4.dart';
+
 import 'package:provider/provider.dart';
 
-
-import 'package:portafolio_web_f/screens/uiMovil/page2.dart';
-import 'package:portafolio_web_f/screens/uiMovil/page3.dart';
 import 'package:portafolio_web_f/providers/scrollProvider.dart';
-import 'package:portafolio_web_f/screens/uiMovil/page1.dart';
 import 'package:portafolio_web_f/widgets/barTitleWidget.dart';
+import 'package:portafolio_web_f/screens/uiMovil/uiMovilScreen.dart';
 
 
 

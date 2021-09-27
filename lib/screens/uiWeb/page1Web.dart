@@ -15,7 +15,7 @@ class Page1Web extends StatelessWidget {
       constraints: BoxConstraints(
         maxWidth: double.infinity
       ),
-      height: size.height - 65,
+      height: size.height - 75,
       child: Align(
         alignment: Alignment.centerLeft,
         child: Column(

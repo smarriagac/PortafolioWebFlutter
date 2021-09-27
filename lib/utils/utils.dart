@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portafolio_web_f/widgets/reposWebWidget.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:portafolio_web_f/widgets/reposWebWidget.dart';
 import 'package:portafolio_web_f/models/skillsModels.dart';
 import 'package:portafolio_web_f/widgets/reposWidget.dart';
 
@@ -84,7 +84,6 @@ final List<Widget> repos = [
       icon: FaIcon(FontAwesomeIcons.twitter, size: 50, color: colorSecundario1,) 
     ),
     
-
   ];
 
 
@@ -92,6 +91,9 @@ final List<Widget> repos = [
 
 final styletitleweb = TextStyle(fontSize: 55, color: colorSecundario, fontWeight: FontWeight.bold);
 final styletitleRepoWeb = TextStyle(fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold);
+final styleContactoWeb = TextStyle(fontSize: 30, color: Colors.white54);
+
+final styleContanto2Web= TextStyle(fontSize: 30, color: colorSecundario, fontStyle: FontStyle.italic);
 
 
 
