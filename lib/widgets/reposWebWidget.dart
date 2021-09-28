@@ -29,8 +29,8 @@ class RepoWebWidget extends StatelessWidget {
 
     final tamanho = MediaQuery.of(context).size;
 
-    var rect2 = Rect.fromLTWH(direccion ? 450 : 0, 0, tamanho.width * 0.60, tamanho.height * 0.80);
-    var rect3 = Rect.fromLTWH(direccion ? 0 : 450, 100, tamanho.width * 0.60, tamanho.height * 0.80);
+    var rect2 = Rect.fromLTWH(direccion ? 450 : 0, 0, tamanho.width * 0.55, tamanho.height * 0.80);
+    var rect3 = Rect.fromLTWH(direccion ? 0 : 450, 100, tamanho.width * 0.55, tamanho.height * 0.80);
     return Padding(
       padding: EdgeInsets.only(left: 30, right: 10),
       child: Container(
