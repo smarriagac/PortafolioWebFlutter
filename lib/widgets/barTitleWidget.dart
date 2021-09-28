@@ -18,8 +18,8 @@ class BarTitleWidget extends StatelessWidget {
 
     return Container(
       constraints: BoxConstraints(
-        maxHeight: size.height * 0.11,
-        minHeight: size.height * 0.08,        
+        maxHeight: size.height * 0.15,
+        minHeight: size.height * 0.12,        
       ),
       width: double.infinity,
       //color: Colors.red,
