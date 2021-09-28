@@ -21,6 +21,15 @@ class BarTitleWidget extends StatelessWidget {
         maxHeight: size.height * 0.15,
         minHeight: size.height * 0.12,        
       ),
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black87,
+            offset: Offset(3,5),
+            blurRadius: 65,
+          )
+        ]
+      ),
       width: double.infinity,
       //color: Colors.red,
       child: ResponsiveLayout.isSmallScreen(context) 

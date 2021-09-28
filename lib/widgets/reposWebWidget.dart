@@ -26,13 +26,16 @@ class RepoWebWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var rect2 = Rect.fromLTWH(direccion ? 550 : 0, 0, 900, 700);
-    var rect3 = Rect.fromLTWH(direccion ? 0 : 550, 100, 900, 700);
+
+    final tamanho = MediaQuery.of(context).size;
+
+    var rect2 = Rect.fromLTWH(direccion ? 450 : 0, 0, tamanho.width * 0.60, tamanho.height * 0.80);
+    var rect3 = Rect.fromLTWH(direccion ? 0 : 450, 100, tamanho.width * 0.60, tamanho.height * 0.80);
     return Padding(
       padding: EdgeInsets.only(left: 30, right: 10),
       child: Container(
         //color: Colors.red,
-        width: double.infinity,
+        width: double.infinity - 150,
         height: 650,
         child: Stack(
           children: [
@@ -82,10 +85,9 @@ class _InfoRepo extends StatelessWidget {
         Text(this.nombreRepo, style: styletitleRepoWeb),
         SizedBox(height: 20),
         //_ImageRepo(rutaImage: rutaImage),
-        SizedBox(height: 30),
         Container(
           height: 100,
-          width: 600,
+          width: 500,
           decoration: BoxDecoration(
             color: Color(0xff172943),
             borderRadius: BorderRadius.circular(10),
@@ -145,6 +147,9 @@ class _ImageRepo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final tamano = MediaQuery.of(context).size;
+
     return Container(
       //color: Colors.green,
       width: double.infinity,
@@ -153,8 +158,8 @@ class _ImageRepo extends StatelessWidget {
         image: NetworkImage(this.rutaImage),
         placeholder: AssetImage('assets/images/sinimagen.gif'),
         fit: BoxFit.fill,
-        height: 700,
-        width: 900,
+        height: tamano.height * 0.15,
+        width: tamano.width * 0.35,
       ),          
     );
   }

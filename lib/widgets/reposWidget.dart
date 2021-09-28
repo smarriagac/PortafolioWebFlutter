@@ -37,7 +37,7 @@ class RepoWidget extends StatelessWidget {
           child: FadeInImage(
             image: NetworkImage(this.rutaImage),
             placeholder: AssetImage('assets/images/sinimagen.gif'),
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),          
         ),
         SizedBox(height: 30),

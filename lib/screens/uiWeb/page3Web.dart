@@ -9,7 +9,10 @@ class Page3Web extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(50, 30, 50, 30),
-      width: double.infinity,
+      //width: double.infinity,
+      constraints: BoxConstraints(
+        maxWidth: double.infinity - 150
+      ),
       height: 2600,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

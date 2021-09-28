@@ -16,7 +16,7 @@ class Page2Web  extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(50, 25, 30, 20),
       //color: Colors.green,
       constraints: BoxConstraints(
-        maxWidth: double.infinity
+        maxWidth: double.infinity - 250
       ),
       height: ResponsiveLayout.isMediumScreen(context) ? 750 : 600,
       child: Row(
@@ -73,8 +73,8 @@ class _ImagenPerfil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    var height2 = ResponsiveLayout.isMediumScreen(context) ? 300 : 500;
-    var height3 = ResponsiveLayout.isMediumScreen(context) ? 290 : 490;
+    var height2 = ResponsiveLayout.isMediumScreen(context) ? 300 : 450;
+    var height3 = ResponsiveLayout.isMediumScreen(context) ? 290 : 440;
 
     return Stack(
       alignment: Alignment.center,
