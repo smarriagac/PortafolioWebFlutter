@@ -13,12 +13,12 @@ class Page3Web extends StatelessWidget {
       constraints: BoxConstraints(
         maxWidth: double.infinity - 150
       ),
-      height: 2600,
+      height: 2500,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('Portafolio', style: styletitleweb),
-          SizedBox(height: 80),
+          SizedBox(height: 30),
           for (var i = 0; i < reposWeb.length; i++) 
             reposWeb[i]
           

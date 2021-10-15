@@ -20,22 +20,24 @@ class UiWebScreen extends StatelessWidget {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       controller: scrollLisviwe.controlerweb,
-      child: Container(
-        constraints: BoxConstraints(
-          maxWidth: double.infinity,
-        ),
-        child: Column(
-          children: [
-            BarTitleWidget(),
+      child: Center(
+        child: Container(
+          constraints: BoxConstraints(
+            maxWidth: 1800,
+            minWidth: 1600
+          ),
+          child: Column(
+            children: [
+              BarTitleWidget(),
+              Page1Web(),
+              SizedBox(height: 100),
+              Page2Web(),
+              SizedBox(height: 100),
+              Page3Web(),
+              Page4Web(),
 
-            Page1Web(),
-            SizedBox(height: 200),
-            Page2Web(),
-            SizedBox(height: 200),
-            Page3Web(),
-            Page4Web(),
-
-          ],//color: Colors.red,
+            ],//color: Colors.red,
+          ),
         ),
       ),
     );

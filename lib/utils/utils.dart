@@ -60,7 +60,7 @@ final List<Widget> repos = [
     ),
     SizedBox(height: 50),
     RepoWidget(
-      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos r.',
+      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos Qr.',
       nombreRepo: ' Inventario app',
       linkRepo: 'https://github.com/smarriagac/inventory_app',
       rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',
@@ -105,7 +105,7 @@ final List<Widget> reposWeb = [
       rutaImage: 'https://i.postimg.cc/rmGrq4Tz/Noticias.png',
       direccion: true,
     ),
-    SizedBox(height: 150),
+    SizedBox(height: 100),
     RepoWebWidget(
       descripcion: 'Genera una lista de las peliculas en carteleras y las mas populares.',
       nombreRepo: ' Movie App',
@@ -113,27 +113,12 @@ final List<Widget> reposWeb = [
       rutaImage: 'https://i.postimg.cc/9MH93pvv/Group-1.png',
       direccion: false,
     ),
-    SizedBox(height: 150),
+    SizedBox(height: 100),
     RepoWebWidget(
-      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos r.',
+      descripcion: 'Gestion de inventarion de una empresa de pan por medio de codigos Qr.',
       nombreRepo: ' Inventario app',
       linkRepo: 'https://github.com/smarriagac/inventory_app',
       rutaImage: 'https://i.postimg.cc/PJh1D4ym/Group-1.png',
       direccion: true,
     ),
   ];
-
-
-/* Container(
-              width: 200,
-              height: 50,
-              child: MaterialButton(
-                color: backgraundColor,
-                onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(6.0),
-                    side: BorderSide(color: colorSecundario)
-                  ),
-                child:Text("Tocame",style:TextStyle(color: colorSecundario,fontWeight: FontWeight.bold,fontSize: 15.0),),
-              ),
-            ), */

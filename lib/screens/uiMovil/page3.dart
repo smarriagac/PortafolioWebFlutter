@@ -8,19 +8,19 @@ class Page3Movil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      constraints: BoxConstraints(
+        maxHeight: 2100,
+        minHeight: 2000
+      ),
       padding: EdgeInsets.all(20),
       width: 500,
-      height: 2000,
+      height: MediaQuery.of(context).size.height * 0.95,
       child: Column(
         children: [
           Text('Portafolio', style: styletitle),
           SizedBox(height: 50),
-          /* Column(
-            children: repos.map((e) => e).toList(),
-          ) */
           for (var i = 0; i < repos.length; i++) 
             repos[i]
-          
         ],
       ),
     );

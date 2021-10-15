@@ -15,7 +15,7 @@ class Page4Movil extends StatelessWidget {
     return Container(
       padding: EdgeInsets.fromLTRB(30, 10, 15, 30),
       width: 500,
-      height: 700,
+      height: MediaQuery.of(context).size.height * 0.9,
       child: Column(
         children: [
           Text('Contacto', style: styletitle),

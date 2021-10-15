@@ -39,7 +39,7 @@ class Skills extends StatelessWidget {
               height: 100, 
               child: RadialProgress(
               porcentaje: this.porcentaje, 
-              colorPrimario: colorSecundario1, 
+              colorPrimario: Colors.green.shade100, 
               grosorSecundario: 4,
               grosorPrimario: 8
               )

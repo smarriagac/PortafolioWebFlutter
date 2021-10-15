@@ -28,9 +28,11 @@ class UiMovilScreen extends StatelessWidget {
             BarTitleWidget(),
             //SizedBox(height: 900),
             Page1Movil(),
+            SizedBox(height: 10),
             Page2Movil(),
-            SizedBox(height: 100),
+            SizedBox(height: 10),
             Page3Movil(),
+            SizedBox(height: 10),
             Page4Movil(),
 
             //Text('movil')
